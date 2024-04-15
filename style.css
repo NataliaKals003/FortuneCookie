@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /*fazer a medida da caixa atraves das bordas */
+}
+
+:root {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    display: grid;
+    place-items: center;
+    height: 100vh;
+
+    background: linear-gradient(45deg, #190361, #bb00ff);
+    animation: gradient 10s ease infinite;
+    background-size: 200% 200%;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+main {
+    background-color: white;
+    box-shadow: 0rem 2rem 5rem rgba(0, 0, 0, 0.8);
+    border-radius: .5rem;
+    width: min(42.8rem, 90%);
+    text-align: center;
+    padding: 4.8rem 6.4rem 6.4rem;
+    margin-top: -12rem;
+}
+
+body,
+button {
+    font-family: "DM Sans", sans-serif;
+}
+
+.hide {
+    display: none;
+}
+
+/*screen1*/
+
+h1 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 2.4rem;
+    margin-bottom: 1.4rem;
+
+}
+
+h1,
+p {
+    color: #34355B;
+}
+
+p {
+    margin-bottom: 2rem;
+}
+
+#cookie {
+    cursor: pointer;
+}
+
+#cookie:hover {
+    animation: vibracao 0.2s infinite;
+
+}
+
+@keyframes vibracao {
+    0% {
+        transform: translate(-2px, -2px);
+    }
+
+    25% {
+        transform: translate(2px, 2px);
+    }
+
+    50% {
+        transform: translate(-2px, -2px);
+    }
+
+    75% {
+        transform: translate(2px, 2px);
+    }
+
+    100% {
+        transform: translate(-2px, -2px);
+    }
+}
+
+
+/*screen2*/
+
+#fortune {
+    background: #E4EDF1;
+    box-shadow: 2px 2px 2px rgba(85, 85, 85, 0.5);
+    font-family: "Dancing Script";
+    font-size: 2.4rem;
+    font-weight: 700;
+    padding: 1rem;
+    margin-bottom: 1.7rem;
+    animation: fortune-animation 2s forwards;
+}
+
+@keyframes fortune-animation {
+    0% {
+        transform: translateY(18rem) scale(0.1);
+    }
+
+    100% {
+        transform: translateY(0) scale(1);
+    }
+}
+
+
+button {
+    background: #FF9500;
+    color: white;
+    font-weight: 700;
+    border-radius: .4rem;
+    border: none;
+    font-size: 1.5rem;
+    width: 17.4rem;
+    height: 5.2rem;
+    cursor: pointer;
+    transition: background .3s;
+    margin-top: 1.7rem;
+
+}
+
+button:hover {
+    background-color: #e98b08;
+
+}
